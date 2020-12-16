@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeIT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class='container mt-5'>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="navbar-brand logo-block">
+                    <div class='logo-name'>Code<span>IT</span></div>
+                    <div class='logo-description'>STORE</div>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto mr-4">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                All brands
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Brand</a>
+                                <a class="dropdown-item" href="#">Brand</a>
+                                <a class="dropdown-item" href="#">Brand</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Latest</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Featured</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+                        </li>
+                    </ul>
+                    <div class='cart-block'>
+                        <div class="cart-icon mr-2"><i class="fas fa-shopping-bag"></i></div>
+                        <div class="cart-total">$ 460.00</div>
+                        <div class="cart-count">2</div>
+                    </div>
+                </div>    
+        </nav>    
+    </header>
+
+    <!-- Page-block -->
+    <div class="container-fluid mt-5 page-block">
+        <div class="container page-body">
+            <div class='page-title'>My wishlist</div>
+            <div class="page-menu ml-auto">Home <span class='ml-2'>></span> <span class='ml-2 active-item'>My wishlist</span></div>
+        </div>
+    </div>
+
+    <!-- Wishlist -->
+    <div class="container mt-5">
+        <div>
+            <form class='d-flex justify-content-end'>
+                <div class="input-group search-input">
+                    <input type="text" id='searchValue' value='' name='valueId' class="form-control rounded-0 alpha-input" placeholder="Enter product name..."
+                    aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <button class="btn rounded-0 px-3" id='searchBtn' disabled type="button"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+            
+                <div class="ml-3 d-flex align-items-center">
+                        <button class="btn-clear" disabled type='reset'>Clear list</button>
+                </div>
+            </form>
+        </div>
+            
+        <div class="mt-5 row" id='wishlist'>
+            <div class='col-lg-3 col-md-6 col-sm-12 mb-4 card-block'>
+                <div class="card rounded-0 huawei">
+                    <div class='card-hover'>
+                        <button class='rounded-0 p-2 remove'>Remove from list</button>
+                    </div>
+                    <div class='card-image my-5'>                        
+                        <img class="card-img-top" src="img/1.png" alt="Card image cap"></div>
+                    <div class="card-body p-0">
+                        <h5 class="card-title">Huawei Mate S</h5>
+                        <p class="card-text">$280.00</p>                        
+                    </div>
+                    <div class='mt-2 buttons-block btn-group'>
+                        <button class='btn btn-light remove'><i class="fas fa-trash-alt"></i></button>
+                        <button class="btn btn-light"><i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class='col-lg-3 col-md-6 col-sm-12 mb-4 card-block'>
+                <div class="card rounded-0 sony">
+                    <div class='card-hover'>
+                        <button class='rounded-0 p-2 remove'>Remove from list</button>
+                    </div>
+                    <div class='card-image my-5'><img class="card-img-top" src="img/2.png" alt="Card image cap"></div>
+                    <div class="card-body p-0">
+                        <h5 class="card-title">Sony Xperia Z5</h5>
+                        <p class="card-text">$550.00</p>
+                        <div class='mt-2 buttons-block btn-group'>
+                            <button class='btn btn-light remove'><i class="fas fa-trash-alt"></i></button>
+                            <button class="btn btn-light"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='col-lg-3 col-md-6 col-sm-12 mb-4 card-block'>
+                <div class="card rounded-0">
+                    <div class='card-hover'>
+                        <button class='rounded-0 p-2 remove'>Remove from list</button>
+                    </div>
+                    <div class='card-image my-5'><img class="card-img-top" src="img/3.png" alt="Card image cap"></div>
+                    <div class="card-body p-0">
+                        <h5 class="card-title">Xiaomi Mi 4i</h5>
+                        <p class="card-text">$350.00</p>
+                        <div class='mt-2 buttons-block btn-group'>
+                            <button class='btn btn-light remove'><i class="fas fa-trash-alt"></i></button>
+                            <button class="btn btn-light"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='col-lg-3 col-md-6 col-sm-12 mb-4 card-block'>
+                <div class="card rounded-0">
+                    <div class='card-hover'>
+                        <button class='rounded-0 p-2 remove'>Remove from list</button>
+                    </div>
+                    <div class='card-image my-5'><img class="card-img-top" src="img/4.png" alt="Card image cap"></div>
+                    <div class="card-body p-0">
+                        <h5 class="card-title">Huawei G8 4G</h5>
+                        <p class="card-text">$350.00</p>
+                        <div class='mt-2 buttons-block btn-group'>
+                            <button class='btn btn-light remove'><i class="fas fa-trash-alt"></i></button>
+                            <button class="btn btn-light"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='col-lg-3 col-md-6 col-sm-12 mb-4 card-block'>
+                <div class="card rounded-0">
+                    <div class='card-hover'>
+                        <button class='rounded-0 p-2 remove'>Remove from list</button>
+                    </div>
+                    <div class='card-image my-5'><img class="card-img-top" src="img/5.png" alt="Card image cap"></div>
+                    <div class="card-body p-0">
+                        <h5 class="card-title">Iphone Rose Gold</h5>
+                        <p class="card-text">$280.00 <span class='ml-1'>$649.00</span></p>
+                        <div class='mt-2 buttons-block btn-group'>
+                            <button class='btn btn-light remove'><i class="fas fa-trash-alt"></i></button>
+                            <button class="btn btn-light"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='col-lg-3 col-md-6 col-sm-12 mb-4 card-block'>
+                <div class="card rounded-0">
+                    <div class='card-hover'>
+                        <button class='rounded-0 p-2 remove'>Remove from list</button>
+                    </div>
+                    <div class='card-image my-5'><img class="card-img-top" src="img/6.png" alt="Card image cap"></div>
+                    <div class="card-body p-0">
+                        <h5 class="card-title">Huawei G8 4G</h5>
+                        <p class="card-text">$350.00</p>
+                        <div class='mt-2 buttons-block btn-group'>
+                            <button class='btn btn-light remove'><i class="fas fa-trash-alt"></i></button>
+                            <button class="btn btn-light"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='col-lg-3 col-md-6 col-sm-12 mb-4 card-block'>
+                <div class="card rounded-0">
+                    <div class='card-hover'>
+                        <button class='rounded-0 p-2 remove'>Remove from list</button>
+                    </div>
+                    <div class='card-image my-5'><img class="card-img-top" src="img/7.png" alt="Card image cap"></div>
+                    <div class="card-body p-0">
+                        <h5 class="card-title">Galaxy Core Prime</h5>
+                        <p class="card-text">$399.00</p>
+                        <div class='mt-2 buttons-block btn-group'>
+                            <button class='btn btn-light remove'><i class="fas fa-trash-alt"></i></button>
+                            <button class="btn btn-light"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='col-lg-3 col-md-6 col-sm-12 mb-4 card-block'>
+                <div class="card rounded-0">
+                    <div class='card-hover'>
+                        <button class='rounded-0 p-2 remove'>Remove from list</button>
+                    </div>
+                    <div class='card-image my-5'><img class="card-img-top" src="img/8.png" alt="Card image cap"></div>
+                    <div class="card-body p-0">
+                        <h5 class="card-title">Apple Iphone 6S</h5>
+                        <p class="card-text">$550.00</p>
+                        <div class='mt-2 buttons-block btn-group'>
+                            <button class='btn btn-light remove'><i class="fas fa-trash-alt"></i></button>
+                            <button class="btn btn-light"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>     
+            <div class='col-lg-3 col-md-6 col-sm-12 mb-4 card-block'>
+                <div class="card rounded-0">
+                    <div class='card-hover'>
+                        <button class='rounded-0 p-2 remove'>Remove from list</button>
+                    </div>
+                    <div class='card-image my-5'><img class="card-img-top" src="img/8.png" alt="Card image cap"></div>
+                    <div class="card-body p-0">
+                        <h5 class="card-title">Test Product Name</h5>
+                        <p class="card-text">$777.00</p>
+                        <div class='mt-2 buttons-block btn-group'>
+                            <button class='btn btn-light remove'><i class="fas fa-trash-alt"></i></button>
+                            <button class="btn btn-light"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Pagination -->
+    <div class='container d-flex justify-content-center pagination mt-4'>
+        
+    </div>
+
+    <hr class="mt-5">
+
+    <!-- Information -->
+    <div class='container info-block mt-5 d-flex flex-column py-4 justify-content-center'>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval='3000'>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-center">
+                        <div class='d-flex info-item'>
+                            <div class="info-icon mr-3"><i class="fas fa-thumbs-up"></i></div>
+                            <div class='d-flex flex-column'>
+                                <div class="info-title">Full warrently</div>
+                                <div class='info-description my-2'>Read About Our Warrently</div>
+                                <div class='gray-line'></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="d-flex justify-content-center">
+                        <div class='d-flex info-item'>
+                            <div class="info-icon mr-3"><i class="fas fa-truck"></i></div>
+                            <div class='d-flex flex-column'>
+                                <div class="info-title">Express shipping</div>
+                                <div class='info-description my-2'>Local & International Shipping</div>
+                                <div class='gray-line'></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class='d-flex justify-content-center'>
+                        <div class='d-flex info-item'>
+                            <div class="info-icon mr-3"><i class="fas fa-comment-dots"></i></div>
+                            <div class='d-flex flex-column'>
+                                <div class="info-title">Mobile blog</div>
+                                <div class='info-description my-2'>Discuss Your Favourite Phone</div>
+                                <div class='gray-line'></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class='d-flex justify-content-center'>
+                        <div class='d-flex info-item'>
+                            <div class="info-icon mr-3"><i class="fas fa-headphones-alt"></i></div>
+                            <div class='d-flex flex-column'>
+                                <div class="info-title">24/7 Support</div>
+                                <div class='info-description my-2'>Get Full Support via Chat</div>
+                                <div class='gray-line'></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="jumbotron jumbotron-fluid mt-5 mb-0">
+            <div class="container">
+                <div class='row'>
+                    <div class='col-lg-4 col-sm-12 footer-text my-3'>Subscribe to latest smartphones news & great deals we offer</div>
+                    <div class="px-3 col-lg-4 col-sm-12 my-3">
+                        <form class="input-group email-input">
+                            <input type="email" class="form-control rounded-0" placeholder="Enter your email address..." aria-label="Recipient's username"
+                                aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                    <button class="btn rounded-0 px-3" type="submit"><i class="far fa-envelope"></i></button>
+                                </div>                                
+                        </form>
+                    </div>
+                    <div class="btn-group social-networks col-lg-4 col-sm-12 my-3">
+                        <button class='btn btn-light'><i class="fab fa-twitter"></i></button>
+                        <button class='btn btn-light'><i class="fab fa-facebook-f"></i></button>
+                        <button class='btn btn-light'><i class="fab fa-linkedin-in"></i></button>
+                        <button class='btn btn-light'><i class="fab fa-google-plus-g"></i></button>
+                        <button class='btn btn-light'><i class="fab fa-pinterest-p"></i></button>
+                        <button class='btn btn-light'><i class="fab fa-youtube"></i></button>
+                        <button class='btn btn-light'><i class="fas fa-rss"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copyright-block py-5">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="copyright-text mr-2">Copyright © 2020 <span>codeitStore</span> All Rights Reserved.</div>
+                <div class='copyright-cards row'>
+                    <div class='mx-1 my-1'><img src='img/card_1.png' ></div>
+                    <div class='mx-1 my-1'><img src='img/card_2.png' ></div>
+                    <div class='mx-1 my-1'><img src='img/card_3.png'></div>
+                    <div class='mx-1 my-1'><img src='img/card_4.png'></div>
+                    <div class='mx-1 my-1'><img src='img/card_5.png'></div>
+                    <div class='mx-1 my-1'><img src='img/card_6.png'></div>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/06208f63aa.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/jquery.simplePagination.js"></script>
+    <script src='js/index.js'></script>
+    
+</body>
+</html>
