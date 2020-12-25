@@ -26,17 +26,18 @@ body {
   letter-spacing: 0.78em;
   color: #444444;
 }
-.nav-item a {
+.navbar-nav .nav-item a.nav-link,
+.navbar-nav .nav-item a.dropdown-item {
   font-size: 13px;
   line-height: 1.2;
   font-weight: 700;
-  color: #444444 !important;
+  color: #444444;
 }
-.nav-item a:hover {
-  color: #e24545 !important;
+.navbar-nav .nav-item a.nav-link:hover {
+  color: #e24545;
 }
-.active a {
-  color: #e24545 !important;
+.navbar-nav .nav-item.active a.nav-link {
+  color: #e24545;
 }
 .active a::first-letter {
   padding-bottom: 5px;
@@ -149,12 +150,11 @@ body {
 .card-hover button:hover {
   text-shadow: 0px 0px 5px #fff;
 }
-.card {
+.card-block .card {
   position: relative;
   display: flex;
-  flex-direction: row;
   align-items: center;
-  border: 1px solid #eeeeee !important;
+  border: 1px solid #eeeeee;
 }
 .card-image {
   height: 190px;
@@ -201,7 +201,6 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.2;
-
   color: #444444;
   border-radius: 0;
   border-bottom: 0;
@@ -238,7 +237,9 @@ body {
   font-weight: 500;
   color: #888888;
 }
-.pagination li a:hover {
+.pagination li a:hover,
+.pagination li a:focus {
+  box-shadow: none;
   border: 0;
   color: #fff;
   background-color: #e24545;
@@ -287,8 +288,8 @@ body {
 }
 
 /****************** Footer ******************/
-.jumbotron {
-  background-color: #f6f6f6 !important;
+footer .jumbotron {
+  background-color: #f6f6f6;
 }
 .footer-text {
   font-size: 14px;
@@ -339,15 +340,15 @@ body {
   background: none;
   color: #999999;
 }
-.email-input input,
-.search-input input {
+.email-input input.form-control,
+.search-input input.form-control {
   border: none;
   height: 100%;
   font-size: 11px;
   line-height: 22px;
   font-weight: 500;
   color: #888888;
-  background: none !important;
+  background: none;
 }
 .email-input input:focus,
 .search-input input:focus {
